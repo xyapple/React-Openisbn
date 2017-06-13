@@ -7,6 +7,7 @@ import Button from 'antd/lib/button';
 import HeaderComponent from './components/Header/Header.js';
 import FooterComponent from './components/Footer/Footer.js';
 import SearchBar from './components/SearchBar/SearchBar.js'
+import BookGallery from './/components/BookGallery/BookGallery.js'
 
 import 'antd/dist/antd.css';
 import MediaQuery from 'react-responsive';
@@ -24,7 +25,8 @@ class Root extends React.Component{
           <div>
           <SearchBar />
           </div>
-      <h1>Hello World</h1>
+      
+      <BookGallery />
       <FooterComponent />
       </div>
     );
