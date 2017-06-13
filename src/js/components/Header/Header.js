@@ -17,6 +17,7 @@ const TabPane = Tabs.TabPane;
 const MenuItemGroup = Menu.ItemGroup;
 
 import {Link} from 'react-router-dom';
+import './style.css'
 
 class HeaderComponent extends React.Component {
  constructor(){
@@ -114,6 +115,7 @@ callback(key) {
 			</Menu.Item>;
     return (
       <header>
+				<div id="home-header">
       				<Row>
       					<Col span={3}>
       						{/**<a href="/" class="logo">
@@ -178,7 +180,7 @@ callback(key) {
       					</Col>
       					<Col span={2}></Col>
       				</Row>
-
+			</div>
       			</header>
 
     );
