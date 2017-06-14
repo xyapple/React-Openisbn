@@ -12,6 +12,8 @@ import BookGallery from './/components/BookGallery/BookGallery.js'
 import 'antd/dist/antd.css';
 import MediaQuery from 'react-responsive';
 
+import App from './components/App.js';
+
 class Root extends React.Component{
   constructor(props){
     super(props);
@@ -19,14 +21,18 @@ class Root extends React.Component{
   render(){
     return (
       <div>
-          <div>
-          <HeaderComponent />
-          </div>
-          <div>
-          <SearchBar />
-          </div>
-      
-      <BookGallery />
+          {/**
+            <div>
+            <HeaderComponent />
+            </div>
+            <div>
+            <SearchBar />
+            </div>
+            <div>
+            <BookGallery />
+            </div>
+            */}
+         <App />
       <FooterComponent />
       </div>
     );
